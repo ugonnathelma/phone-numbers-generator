@@ -1,0 +1,36 @@
+{
+  "name": "phonenumgen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "numbergenerator.js",
+  "dependencies": {
+    "avl": "^1.4.4",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/node": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
+    "jest": "^23.6.0",
+    "regenerator-runtime": "^0.12.1",
+    "supertest": "^3.3.0"
+  },
+  "scripts": {
+    "test": "npm run test-api && npm run test-frontend",
+    "test-api": "jest --coverage",
+    "test-frontend": "cd frontend && jest",
+    "start": "babel-node server.js",
+    "build-frontend": "cd frontend && npm install && npm run build && cd .. && cp -R frontend/build/ ./public/",
+    "run-it": "watchman watch-del /Users/ugonna/Downloads/phonenumgen-api ; watchman watch-project /Users/ugonna/Downloads/phonenumgen-api"
+  },
+  "jest":{
+    "testRegex": "./__tests__/.*.spec.js$"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
