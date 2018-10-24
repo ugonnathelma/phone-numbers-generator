@@ -1,23 +1,35 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
 import "./App.css";
-import AnotherComponent from "./AnotherComponent";
 
 class App extends Component {
+  state = {
+    isLoading: false
+  };
+
+  generate = () => {
+    this.setState({ isLoading: true });
+  };
+
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <AnotherComponent />
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+          <div>
+          <p className="main-title">Random Phone Number Generator</p>
+            <p className="sub-title">
+              Click "Generate" Button to generate a list of phone numbers
+            </p>
+            <div className="sort-links">
+              Sort: <span>Ascending</span>
+              <span>Descending</span>
+            </div>
+            <div className="stat-area">
+              {this.state.isLoading && <div className="loading" />}
+            </div>
+            <button className="generate-btn" onClick={this.generate}>
+              Generate
+            </button>
+          </div>
         </header>
       </div>
     );
