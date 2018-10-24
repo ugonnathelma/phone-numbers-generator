@@ -24,8 +24,7 @@
     "test-api": "jest --coverage",
     "test-frontend": "cd frontend && jest",
     "start": "npm run build-frontend && babel-node server.js",
-    "build-frontend": "cd frontend && npm install && npm run build && cd .. && cp -R frontend/build/ ./public/",
-    "run-it": "watchman watch-del /Users/ugonna/Downloads/phonenumgen-api ; watchman watch-project /Users/ugonna/Downloads/phonenumgen-api"
+    "build-frontend": "cd frontend && npm install && npm run build && cd .. && cp -R frontend/build/ ./public/"
   },
   "jest": {
     "testRegex": "./__tests__/.*.spec.js$"

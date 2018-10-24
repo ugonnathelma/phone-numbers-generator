@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1540380830511" clover="3.2.0">
-  <project timestamp="1540380830511" name="All files">
+<coverage generated="1540388783107" clover="3.2.0">
+  <project timestamp="1540388783107" name="All files">
     <metrics statements="55" coveredstatements="52" conditionals="16" coveredconditionals="13" methods="11" coveredmethods="9" elements="82" coveredelements="74" complexity="0" loc="55" ncloc="55" packages="1" files="5" classes="5">
       <file name="generatePhoneNumbers.js" path="/Users/ugonna/Downloads/phonenumgen-api/generatePhoneNumbers.js">
         <metrics statements="8" coveredstatements="8" conditionals="4" coveredconditionals="3" methods="2" coveredmethods="2"/>
@@ -9,7 +9,7 @@
         <line num="5" count="4" type="stmt"/>
         <line num="6" count="20009" type="stmt"/>
         <line num="7" count="20009" type="stmt"/>
-        <line num="10" count="274730" type="cond" truecount="3" falsecount="1"/>
+        <line num="10" count="276773" type="cond" truecount="3" falsecount="1"/>
         <line num="11" count="4" type="stmt"/>
         <line num="12" count="4" type="stmt"/>
       </file>
