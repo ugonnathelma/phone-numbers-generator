@@ -36,6 +36,7 @@
   height: 250px;
   border-radius: 0.2em;
   background-color: #15191f;
+  padding: 1em;
 }
 
 .generate-btn {
@@ -87,4 +88,15 @@
 
 .main-title {
   margin-bottom: 0.2em;
+}
+
+.generated-data span {
+  font-size: 12px;
+  margin-bottom: 1em;
+}
+
+.generated-data button {
+  font-size: 12px;
+  margin-bottom: 1em;
+  padding: 0.5em;
 }
